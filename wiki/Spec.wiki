@@ -1,3 +1,4 @@
+#summary Location Authentication: A PKI based scheme.
 === Requesting a location. ===
 If Bob wants Alice’s location, she must first approve and verify his identity through the following process.
 
