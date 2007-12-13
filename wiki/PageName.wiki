@@ -1,8 +1,9 @@
 #summary Location Authentication: A PKI based scheme.
 
-=== If Bob wants Alice’s location, she must first approve and verify his identity through the following process. ===
+=== Requesting a location. ===
+If Bob wants Alice’s location, she must first approve and verify his identity through the following process.
 
-- Bob makes an SMS request for Alice’s public key from a certificate authority (C.A.)
+- Bob makes an SMS request for Alice’s public key from a certificate authority (C.A.){{{*}}}
 
 - Bob uses the public key to encrypt an SMS message requesting Alice’s location.
 
@@ -17,7 +18,7 @@
 - From now on, Alice need only to verify that Bob’s number is still linked to his public key in order to send him her location.
 
 
-=== Certificate authority: ===
+=== {{{*}}}Certificate authority: ===
 The C.A. will need to link the phone number, subscriber name, and a randomly generated GUID, together with the public key. 
 
 In the case that a phone subscription is cancelled, people should no longer trust that phone number with their location. Therefore to prevent the next person with the number from getting locations from people that trusted the old subscriber they need to:
